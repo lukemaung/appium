@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="0.7.0" package="io.selendroid">
+
+    <uses-sdk minSdkVersion="10"/>
+
+    <instrumentation name="io.selendroid.ServerInstrumentation" targetPackage="io.selendroid.testapp"/>
+
+    <uses-permission name="android.permission.INTERNET"/>
+    <uses-permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission name="android.permission.ACCESS_MOCK_LOCATION"/>
+    <uses-permission name="android.permission.INJECT_EVENTS"/>
+    <uses-permission name="android.permission.WAKE_LOCK"/>
+
+    <application label="Selendroid">
+        <uses-library name="android.test.runner"/>
+    </application>
+
+</manifest>
